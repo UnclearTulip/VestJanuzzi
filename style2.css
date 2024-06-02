@@ -1,15 +1,17 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
 }
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
+
 .header {
     text-align: center;
     background-color: rgb(0, 140, 255);
@@ -17,44 +19,53 @@ body {
     color: white;
     font-size: 24px;
 }
+
 .menu {
     display: flex;
     justify-content: center;
     background-color: #333;
 }
-.menu > li {
+
+.menu>li {
     position: relative;
     list-style: none;
 }
-.menu > li > a {
+
+.menu>li>a {
     display: block;
     padding: 14px 20px;
     text-decoration: none;
     color: white;
 }
-.menu > li:hover {
-    background-color:  rgb(0, 140, 255);
+
+.menu>li:hover {
+    background-color: rgb(0, 140, 255);
 }
+
 .submenu {
     display: none;
     position: absolute;
-    background-color:  rgb(0, 140, 255);
+    background-color: rgb(0, 140, 255);
     top: 100%;
     left: 0;
     z-index: 1000;
 }
-.submenu > li > a {
+
+.submenu>li>a {
     display: block;
     padding: 10px 20px;
     text-decoration: none;
     color: white;
 }
-.submenu > li > a:hover {
+
+.submenu>li>a:hover {
     background-color: #333;
 }
-.menu > li:hover .submenu {
+
+.menu>li:hover .submenu {
     display: block;
 }
+
 .content {
     max-width: 1200px;
     margin: 0 auto;
@@ -66,5 +77,5 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.4;
-   
+
 }
